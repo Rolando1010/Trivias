@@ -1,0 +1,13 @@
+{% extends "base.html"%}
+
+{% block titulo %}Ingreso{% endblock %}
+
+{% block contenido %}
+    <form method="POST">
+        <h1>Ingreso</h1>
+        {% csrf_token %}
+        <input name="nombre" type="text" class=" entrada-nombre form-control mx-auto text-center" placeholder="Nombre de Usuario" required>
+        <button class="btn boton">Ingresar</button>
+    </form>
+    <a href="{% url 'ranking' %}"><button class="btn boton btn-respuesta">Ir al Ranking</button></a>
+{% endblock %}

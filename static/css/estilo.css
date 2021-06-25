@@ -1,0 +1,73 @@
+body{
+    background-color: #131338;
+    word-break: break-all !important;
+}
+
+.contenedor-principal{
+    background: #373B44;
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);
+    background: linear-gradient(to right, #4286f4, #373B44);
+    color:#fff;
+    width: 80%;
+    margin-top: 50px !important;
+    padding: 20px;
+}
+
+.entrada-nombre{
+    padding: 10px;
+    width: 60%;
+    margin: 30px 0;
+}
+
+.boton{
+    background-color: #131338;
+    color: #fff;
+}
+
+.boton:hover{
+    color: #fff;
+    background-color: #0c0c77;
+}
+
+.sub-titulo{
+    margin: 20px 0 30px 0;
+}
+
+.btn-tema{
+    width: 70%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.titulo{
+    margin-bottom: 20px;
+}
+
+.btn-respuesta{
+    width: 40%;
+    margin: 20px 20px;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.contador{
+    color: #fff;
+    float: right;
+    margin: -30px 20px 0px 0px;
+}
+
+.celda{
+    color: #fff;
+    border-width: 5px !important;
+    border-color: #131338 !important;
+    word-break: normal;
+}
+
+.oculto{
+    display: none;
+}
+
+.fila:hover{
+    background-color: #131338;
+}

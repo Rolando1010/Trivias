@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block titulo %} Resultado {% endblock %}
+
+{% block contenido %}
+    <h1 class="titulo">Felicitaciones, has terminado la trivia</h1>
+    <h5 class="sub-titulo">Resultado de Trivia de {{nombre}}:</h1>
+    <h5 class="sub-titulo">Duraste una cantidad de {{tiempo}} minutos</h5>
+    <h5 class="sub-titulo">Obtuviste un total de {{puntaje}} puntos</h5>
+    <a href="{% url 'ranking' %}"><button class="btn boton btn-respuesta">Ir al Ranking</button></a>
+{% endblock %}

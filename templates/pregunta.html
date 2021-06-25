@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block titulo %}Pregunta{% endblock %}
+
+{% block pre-contenedor %}
+    <h4 class="contador">/20</h4>
+{% endblock %}
+
+{% block contenido %}
+    <h3 class="titulo"></h3>
+    <form method="POST">
+        <div class="contenedor-respuestas"></div>
+        {% csrf_token %}
+        <input class="oculto respuestas" name="respuestas">
+        <input class="oculto tiempo" name="tiempo">
+    </form>
+{% endblock %}
+
+{% block js %}
+    <script>
+        var datos = "{{ datos|safe }}";
+    </script>
+    <script src="{% static 'js/codigo.js' %}"></script>
+{% endblock %}

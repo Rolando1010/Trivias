@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block titulo %}Ranking{% endblock %}
+
+{% block contenido %}
+    <h2 class="titulo">Ranking</h2>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr class="fila">
+                    <th class="celda">#</th>
+                    <th class="celda">Nombre</th>
+                    <th class="celda">Puntaje</th>
+                    <th class="celda">Tiempo</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for fila in filas %}
+                    <tr class="fila">
+                    {% for celda in fila %}
+                        <td class="celda">{{celda}}</td>
+                    {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <a href="{% url 'index' %}"><button class="btn boton btn-respuesta">Ir a Inicio</button></a>
+{% endblock %}

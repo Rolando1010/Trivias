@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block titulo %}Temas{% endblock %}
+
+{% block contenido %}
+    <h1>Temas de Trivia</h1>
+    <h5 class="sub-titulo">Escoge uno de los temas brindados para la trivia</h5>
+    <form method="POST">
+        {% csrf_token %}
+        {% for tema in temas %}
+            <input name="tema" type="submit" class="btn boton btn-tema" value="{{tema}}">
+        {% endfor %}
+    </form>
+{% endblock %}
